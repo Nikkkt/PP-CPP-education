@@ -1,0 +1,55 @@
+﻿#include <iostream>
+using namespace std;
+
+int main() {
+    int size = 1000;
+    char* str = new char[size];
+    gets_s(str, size - 1);
+
+    int vowel = 0;
+    int consonant = 0;
+    int punctuation_mark = 0;
+    int number = 0;
+    int word = 1;
+    int other = 0;
+
+    char vowels[] = "AEIOUYaeiouy";
+    char consonants[] = "QWRTPSDFGHJKLZXCVBNMqwrtpsdfghjklzxcvbnm";
+    char punctuation_marks[] = ".,!?:;-";
+    char numbers[] = "0123456789";
+
+    for (int i = 0; i < strlen(str); i++) {
+        if (strchr(vowels, str[i])) {
+            vowel++;
+        }
+        else if (strchr(consonants, str[i])) {
+            consonant++;
+        }
+        else if (strchr(punctuation_marks, str[i])) {
+            punctuation_mark++;
+        }
+        else if (strchr(numbers, str[i])) {
+            number++;
+        }
+        else if (str[i] == ' ') {
+            if (str[i + 1] == ' ') {
+                continue;
+            }
+            else {
+                word++;
+            }
+        }
+        else {
+            other++;
+        }
+    }
+
+    cout << "Vowels: " << vowel << endl;
+    cout << "Consonants: " << consonant << endl;
+    cout << "Punctuation_marks: " << punctuation_mark << endl;
+    cout << "Numbers: " << number << endl;
+    cout << "Words: " << word << endl;
+    cout << "Other: " << other << endl;
+
+    delete[] str;
+}

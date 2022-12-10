@@ -1,0 +1,5 @@
+﻿  preprocessor.cpp
+C:\Users\nikit\OneDrive\Рабочий стол\Programming\C++\PP C++ education\preprocessor\preprocessor\preprocessor.cpp(46,2): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\nikit\OneDrive\Рабочий стол\Programming\C++\PP C++ education\preprocessor\preprocessor\preprocessor.cpp(93,2): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\nikit\OneDrive\Рабочий стол\Programming\C++\PP C++ education\preprocessor\preprocessor\preprocessor.cpp(140,2): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  preprocessor.vcxproj -> C:\Users\nikit\OneDrive\Рабочий стол\Programming\C++\PP C++ education\preprocessor\x64\Debug\preprocessor.exe
